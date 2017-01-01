@@ -5,129 +5,27 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 AF_LOCAL	lib/unp.h	173;"	d
-AI_CANONNAME	lib/addrinfo.h	23;"	d
-AI_PASSIVE	lib/addrinfo.h	22;"	d
-Accept	lib/wrapsock.c	/^Accept(int fd, struct sockaddr *sa, socklen_t *salenptr)$/;"	f
 BUFFSIZE	lib/unp.h	197;"	d
-Bind	lib/wrapsock.c	/^Bind(int fd, const struct sockaddr *sa, socklen_t salen)$/;"	f
-CC	makefile	/^CC = gcc$/;"	m
+CC	client/makefile	/^CC = gcc$/;"	m
+CC	server/makefile	/^CC = gcc$/;"	m
 CMSG_LEN	lib/unp.h	154;"	d
 CMSG_SPACE	lib/unp.h	158;"	d
-Calloc	lib/wrapunix.c	/^Calloc(size_t n, size_t size)$/;"	f
-Close	lib/wrapunix.c	/^Close(int fd)$/;"	f
-Connect	lib/wrapsock.c	/^Connect(int fd, const struct sockaddr *sa, socklen_t salen)$/;"	f
-Connect_timeo	lib/connect_timeo.c	/^Connect_timeo(int fd, const SA *sa, socklen_t salen, int sec)$/;"	f
 DIR_MODE	lib/unp.h	240;"	d
-Dup2	lib/wrapunix.c	/^Dup2(int fd1, int fd2)$/;"	f
-EAI_ADDRFAMILY	lib/addrinfo.h	36;"	d
-EAI_AGAIN	lib/addrinfo.h	37;"	d
-EAI_BADFLAGS	lib/addrinfo.h	38;"	d
-EAI_FAIL	lib/addrinfo.h	39;"	d
-EAI_FAMILY	lib/addrinfo.h	40;"	d
-EAI_MEMORY	lib/addrinfo.h	41;"	d
-EAI_NODATA	lib/addrinfo.h	42;"	d
-EAI_NONAME	lib/addrinfo.h	43;"	d
-EAI_SERVICE	lib/addrinfo.h	44;"	d
-EAI_SOCKTYPE	lib/addrinfo.h	45;"	d
-EAI_SYSTEM	lib/addrinfo.h	46;"	d
-EXEC	makefile	/^EXEC = j-server$/;"	m
+EXEC	client/makefile	/^EXEC = j-client$/;"	m
+EXEC	server/makefile	/^EXEC = j-server$/;"	m
 FILE_MODE	lib/unp.h	238;"	d
-Family_to_level	lib/family_to_level.c	/^Family_to_level(int family)$/;"	f
-Fclose	lib/wrapstdio.c	/^Fclose(FILE *fp)$/;"	f
-Fcntl	lib/wrapunix.c	/^Fcntl(int fd, int cmd, int arg)$/;"	f
-Fdopen	lib/wrapstdio.c	/^Fdopen(int fd, const char *type)$/;"	f
-Fgets	lib/wrapstdio.c	/^Fgets(char *ptr, int n, FILE *stream)$/;"	f
-Fopen	lib/wrapstdio.c	/^Fopen(const char *filename, const char *mode)$/;"	f
-Fork	lib/wrapunix.c	/^Fork(void)$/;"	f
-Fputs	lib/wrapstdio.c	/^Fputs(const char *ptr, FILE *stream)$/;"	f
-Get_ifi_info	lib/get_ifi_info.c	/^Get_ifi_info(int family, int doaliases)$/;"	f
-Getpeername	lib/wrapsock.c	/^Getpeername(int fd, struct sockaddr *sa, socklen_t *salenptr)$/;"	f
-Getsockname	lib/wrapsock.c	/^Getsockname(int fd, struct sockaddr *sa, socklen_t *salenptr)$/;"	f
-Getsockopt	lib/wrapsock.c	/^Getsockopt(int fd, int level, int optname, void *optval, socklen_t *optlenptr)$/;"	f
-Gettimeofday	lib/wrapunix.c	/^Gettimeofday(struct timeval *tv, void *foo)$/;"	f
-Host_serv	lib/host_serv.c	/^Host_serv(const char *host, const char *serv, int family, int socktype)$/;"	f
-IFI_ALIAS	lib/unpifi.h	27;"	d
-IFI_HADDR	lib/unpifi.h	11;"	d
-IFI_NAME	lib/unpifi.h	10;"	d
 INADDR_NONE	lib/unp.h	98;"	d
 INET6_ADDRSTRLEN	lib/unp.h	121;"	d
 INET_ADDRSTRLEN	lib/unp.h	113;"	d
 INFTIM	lib/unp.h	184;"	d
 INFTIM_UNPH	lib/unp.h	187;"	d
-If_indextoname	lib/if_indextoname.c	/^If_indextoname(unsigned int index, char *name)$/;"	f
-If_nameindex	lib/if_nameindex.c	/^If_nameindex(void)$/;"	f
-If_nametoindex	lib/if_nametoindex.c	/^If_nametoindex(const char *name)$/;"	f
-Inet6_rth_add	lib/wrapsock.c	/^Inet6_rth_add(void *rthbuf, const struct in6_addr *addr)$/;"	f
-Inet6_rth_getaddr	lib/wrapsock.c	/^Inet6_rth_getaddr(const void *rthbuf, int idx)$/;"	f
-Inet6_rth_init	lib/wrapsock.c	/^Inet6_rth_init(void *rthbuf, socklen_t rthlen, int type, int segments)$/;"	f
-Inet6_rth_reverse	lib/wrapsock.c	/^Inet6_rth_reverse(const void *in, void *out)$/;"	f
-Inet6_rth_segments	lib/wrapsock.c	/^Inet6_rth_segments(const void *rthbuf)$/;"	f
-Inet6_rth_space	lib/wrapsock.c	/^Inet6_rth_space(int type, int segments)$/;"	f
-Inet_ntop	lib/wraplib.c	/^Inet_ntop(int family, const void *addrptr, char *strptr, size_t len)$/;"	f
-Inet_pton	lib/wraplib.c	/^Inet_pton(int family, const char *strptr, void *addrptr)$/;"	f
-Ioctl	lib/wrapunix.c	/^Ioctl(int fd, int request, void *arg)$/;"	f
-Kevent	lib/wrapsock.c	/^Kevent(int kq, const struct kevent *changelist, int nchanges,$/;"	f
-Kqueue	lib/wrapsock.c	/^Kqueue(void)$/;"	f
 LISTENQ	lib/unp.h	193;"	d
-Listen	lib/wrapsock.c	/^Listen(int fd, int backlog)$/;"	f
-MAXFD	lib/daemon_init.c	4;"	d	file:
 MAXLINE	lib/unp.h	196;"	d
-Malloc	lib/wrapunix.c	/^Malloc(size_t size)$/;"	f
-Mcast_block_source	lib/mcast_join.c	/^Mcast_block_source(int sockfd, const SA *src, socklen_t srclen,$/;"	f
-Mcast_get_if	lib/mcast_get_if.c	/^Mcast_get_if(int sockfd)$/;"	f
-Mcast_get_loop	lib/mcast_get_loop.c	/^Mcast_get_loop(int sockfd)$/;"	f
-Mcast_get_ttl	lib/mcast_get_ttl.c	/^Mcast_get_ttl(int sockfd)$/;"	f
-Mcast_join	lib/mcast_join.c	/^Mcast_join(int sockfd, const SA *grp, socklen_t grplen,$/;"	f
-Mcast_join_source_group	lib/mcast_join.c	/^Mcast_join_source_group(int sockfd, const SA *src, socklen_t srclen,$/;"	f
-Mcast_leave	lib/mcast_leave.c	/^Mcast_leave(int sockfd, const SA *grp, socklen_t grplen)$/;"	f
-Mcast_leave_source_group	lib/mcast_leave.c	/^Mcast_leave_source_group(int sockfd, const SA *src, socklen_t srclen,$/;"	f
-Mcast_set_if	lib/mcast_set_if.c	/^Mcast_set_if(int sockfd, const char *ifname, u_int ifindex)$/;"	f
-Mcast_set_loop	lib/mcast_set_loop.c	/^Mcast_set_loop(int sockfd, int onoff)$/;"	f
-Mcast_set_ttl	lib/mcast_set_ttl.c	/^Mcast_set_ttl(int sockfd, int val)$/;"	f
-Mcast_unblock_source	lib/mcast_join.c	/^Mcast_unblock_source(int sockfd, const SA *src, socklen_t srclen,$/;"	f
-Mkstemp	lib/wrapunix.c	/^Mkstemp(char *template)$/;"	f
-Mmap	lib/wrapunix.c	/^Mmap(void *addr, size_t len, int prot, int flags, int fd, off_t offset)$/;"	f
-My_addrs	lib/my_addrs.c	/^My_addrs(int *pfamily)$/;"	f
-NI_DGRAM	lib/addrinfo.h	33;"	d
-NI_MAXHOST	lib/addrinfo.h	26;"	d
-NI_MAXSERV	lib/addrinfo.h	27;"	d
-NI_NAMEREQD	lib/addrinfo.h	31;"	d
-NI_NOFQDN	lib/addrinfo.h	29;"	d
-NI_NUMERICHOST	lib/addrinfo.h	30;"	d
-NI_NUMERICSERV	lib/addrinfo.h	32;"	d
-OBJS	makefile	/^OBJS = j-server.o str_echo.o$/;"	m
-Open	lib/wrapunix.c	/^Open(const char *pathname, int oflag, mode_t mode)$/;"	f
+OBJS	client/makefile	/^OBJS = j-client.o str_cli.o error.o readline.o$/;"	m
+OBJS	server/makefile	/^OBJS = j-server.o str_echo.o error.o readline.o$/;"	m
 PF_LOCAL	lib/unp.h	176;"	d
-Pipe	lib/wrapunix.c	/^Pipe(int *fds)$/;"	f
-Poll	lib/wrapsock.c	/^Poll(struct pollfd *fdarray, unsigned long nfds, int timeout)$/;"	f
-Pthread_cond_broadcast	lib/wrappthread.c	/^Pthread_cond_broadcast(pthread_cond_t *cptr)$/;"	f
-Pthread_cond_signal	lib/wrappthread.c	/^Pthread_cond_signal(pthread_cond_t *cptr)$/;"	f
-Pthread_cond_timedwait	lib/wrappthread.c	/^Pthread_cond_timedwait(pthread_cond_t *cptr, pthread_mutex_t *mptr,$/;"	f
-Pthread_cond_wait	lib/wrappthread.c	/^Pthread_cond_wait(pthread_cond_t *cptr, pthread_mutex_t *mptr)$/;"	f
-Pthread_create	lib/wrappthread.c	/^Pthread_create(pthread_t *tid, const pthread_attr_t *attr,$/;"	f
-Pthread_detach	lib/wrappthread.c	/^Pthread_detach(pthread_t tid)$/;"	f
-Pthread_join	lib/wrappthread.c	/^Pthread_join(pthread_t tid, void **status)$/;"	f
-Pthread_key_create	lib/wrappthread.c	/^Pthread_key_create(pthread_key_t *key, void (*func)(void *))$/;"	f
-Pthread_kill	lib/wrappthread.c	/^Pthread_kill(pthread_t tid, int signo)$/;"	f
-Pthread_mutex_init	lib/wrappthread.c	/^Pthread_mutex_init(pthread_mutex_t *mptr, pthread_mutexattr_t *attr)$/;"	f
-Pthread_mutex_lock	lib/wrappthread.c	/^Pthread_mutex_lock(pthread_mutex_t *mptr)$/;"	f
-Pthread_mutex_unlock	lib/wrappthread.c	/^Pthread_mutex_unlock(pthread_mutex_t *mptr)$/;"	f
-Pthread_mutexattr_init	lib/wrappthread.c	/^Pthread_mutexattr_init(pthread_mutexattr_t *attr)$/;"	f
-Pthread_mutexattr_setpshared	lib/wrappthread.c	/^Pthread_mutexattr_setpshared(pthread_mutexattr_t *attr, int flag)$/;"	f
-Pthread_once	lib/wrappthread.c	/^Pthread_once(pthread_once_t *ptr, void (*func)(void))$/;"	f
-Pthread_setspecific	lib/wrappthread.c	/^Pthread_setspecific(pthread_key_t key, const void *value)$/;"	f
-RTT_MAXNREXMT	lib/unprtt.h	17;"	d
-RTT_RTOCALC	lib/rtt.c	10;"	d	file:
-RTT_RXTMAX	lib/unprtt.h	16;"	d
-RTT_RXTMIN	lib/unprtt.h	15;"	d
-Read	lib/wrapunix.c	/^Read(int fd, void *ptr, size_t nbytes)$/;"	f
-Read_fd	lib/read_fd.c	/^Read_fd(int fd, void *ptr, size_t nbytes, int *recvfd)$/;"	f
-Readable_timeo	lib/readable_timeo.c	/^Readable_timeo(int fd, int sec)$/;"	f
-Readline	lib/readline.c	/^Readline(int fd, void *ptr, size_t maxlen)$/;"	f
-Readn	lib/readn.c	/^Readn(int fd, void *ptr, size_t nbytes)$/;"	f
-Recv	lib/wrapsock.c	/^Recv(int fd, void *ptr, size_t nbytes, int flags)$/;"	f
-Recvfrom	lib/wrapsock.c	/^Recvfrom(int fd, void *ptr, size_t nbytes, int flags,$/;"	f
-Recvmsg	lib/wrapsock.c	/^Recvmsg(int fd, struct msghdr *msg, int flags)$/;"	f
+Readline	client/readline.c	/^Readline(int fd, void *ptr, size_t maxlen)$/;"	f
+Readline	server/readline.c	/^Readline(int fd, void *ptr, size_t maxlen)$/;"	f
 SA	lib/unp.h	212;"	d
 SERV_PORT	lib/unp.h	200;"	d
 SERV_PORT_STR	lib/unp.h	201;"	d
@@ -135,178 +33,62 @@ SHUT_RD	lib/unp.h	102;"	d
 SHUT_RDWR	lib/unp.h	104;"	d
 SHUT_WR	lib/unp.h	103;"	d
 SUN_LEN	lib/unp.h	166;"	d
-Select	lib/wrapsock.c	/^Select(int nfds, fd_set *readfds, fd_set *writefds, fd_set *exceptfds,$/;"	f
-Send	lib/wrapsock.c	/^Send(int fd, const void *ptr, size_t nbytes, int flags)$/;"	f
-Sendmsg	lib/wrapsock.c	/^Sendmsg(int fd, const struct msghdr *msg, int flags)$/;"	f
-Sendto	lib/wrapsock.c	/^Sendto(int fd, const void *ptr, size_t nbytes, int flags,$/;"	f
-Setsockopt	lib/wrapsock.c	/^Setsockopt(int fd, int level, int optname, const void *optval, socklen_t optlen)$/;"	f
-Shutdown	lib/wrapsock.c	/^Shutdown(int fd, int how)$/;"	f
-Sigaddset	lib/wrapunix.c	/^Sigaddset(sigset_t *set, int signo)$/;"	f
-Sigdelset	lib/wrapunix.c	/^Sigdelset(sigset_t *set, int signo)$/;"	f
-Sigemptyset	lib/wrapunix.c	/^Sigemptyset(sigset_t *set)$/;"	f
-Sigfillset	lib/wrapunix.c	/^Sigfillset(sigset_t *set)$/;"	f
 Sigfunc	lib/unp.h	/^typedef	void	Sigfunc(int);	\/* for signal handlers *\/$/;"	t
-Sigismember	lib/wrapunix.c	/^Sigismember(const sigset_t *set, int signo)$/;"	f
-Signal	lib/signal.c	/^Signal(int signo, Sigfunc *func)	\/* for our signal() function *\/$/;"	f
-Signal_intr	lib/signal_intr.c	/^Signal_intr(int signo, Sigfunc *func)$/;"	f
-Sigpending	lib/wrapunix.c	/^Sigpending(sigset_t *set)$/;"	f
-Sigprocmask	lib/wrapunix.c	/^Sigprocmask(int how, const sigset_t *set, sigset_t *oset)$/;"	f
-Sock_bind_wild	lib/sock_bind_wild.c	/^Sock_bind_wild(int sockfd, int family)$/;"	f
-Sock_ntop	lib/sock_ntop.c	/^Sock_ntop(const struct sockaddr *sa, socklen_t salen)$/;"	f
-Sock_ntop_host	lib/sock_ntop_host.c	/^Sock_ntop_host(const struct sockaddr *sa, socklen_t salen)$/;"	f
-Sockatmark	lib/wrapsock.c	/^Sockatmark(int fd)$/;"	f
-Socket	lib/wrapsock.c	/^Socket(int family, int type, int protocol)$/;"	f
-Socketpair	lib/wrapsock.c	/^Socketpair(int family, int type, int protocol, int *fd)$/;"	f
-Sockfd_to_family	lib/sockfd_to_family.c	/^Sockfd_to_family(int sockfd)$/;"	f
-Strdup	lib/wrapunix.c	/^Strdup(const char *str)$/;"	f
-Sysconf	lib/wrapunix.c	/^Sysconf(int name)$/;"	f
-Sysctl	lib/wrapunix.c	/^Sysctl(int *name, u_int namelen, void *oldp, size_t *oldlenp,$/;"	f
-Tcp_connect	lib/tcp_connect.c	/^Tcp_connect(const char *host, const char *serv)$/;"	f
-Tcp_listen	lib/tcp_listen.c	/^Tcp_listen(const char *host, const char *serv, socklen_t *addrlenp)$/;"	f
 UNIXDG_PATH	lib/unp.h	203;"	d
 UNIXSTR_PATH	lib/unp.h	202;"	d
-Udp_client	lib/udp_client.c	/^Udp_client(const char *host, const char *serv, SA **saptr, socklen_t *lenptr)$/;"	f
-Udp_connect	lib/udp_connect.c	/^Udp_connect(const char *host, const char *serv)$/;"	f
-Udp_server	lib/udp_server.c	/^Udp_server(const char *host, const char *serv, socklen_t *addrlenp)$/;"	f
-Unlink	lib/wrapunix.c	/^Unlink(const char *pathname)$/;"	f
-Wait	lib/wrapunix.c	/^Wait(int *iptr)$/;"	f
-Waitpid	lib/wrapunix.c	/^Waitpid(pid_t pid, int *iptr, int options)$/;"	f
-Writable_timeo	lib/writable_timeo.c	/^Writable_timeo(int fd, int sec)$/;"	f
-Write	lib/wrapunix.c	/^Write(int fd, void *ptr, size_t nbytes)$/;"	f
-Write_fd	lib/write_fd.c	/^Write_fd(int fd, void *ptr, size_t nbytes, int sendfd)$/;"	f
-Writen	lib/writen.c	/^Writen(int fd, void *ptr, size_t nbytes)$/;"	f
 __SS_ALIGNSIZE	lib/unp.h	219;"	d
 __SS_MAXSIZE	lib/unp.h	218;"	d
 __SS_PAD1SIZE	lib/unp.h	221;"	d
 __SS_PAD1SIZE	lib/unp.h	223;"	d
 __SS_PAD2SIZE	lib/unp.h	225;"	d
-__addrinfo_h	lib/addrinfo.h	2;"	d
 __unp_h	lib/unp.h	5;"	d
-__unp_ifi_h	lib/unpifi.h	5;"	d
-__unp_pthread_h	lib/unpthread.h	5;"	d
-__unp_rtt_h	lib/unprtt.h	2;"	d
-addrinfo	lib/addrinfo.h	/^struct addrinfo {$/;"	s
-ai_addr	lib/addrinfo.h	/^  struct sockaddr	*ai_addr;	\/* binary address *\/$/;"	m	struct:addrinfo	typeref:struct:addrinfo::sockaddr
-ai_addrlen	lib/addrinfo.h	/^  size_t	ai_addrlen;			\/* length of ai_addr *\/$/;"	m	struct:addrinfo
-ai_canonname	lib/addrinfo.h	/^  char		*ai_canonname;		\/* canonical name for host *\/$/;"	m	struct:addrinfo
-ai_family	lib/addrinfo.h	/^  int		ai_family;			\/* PF_xxx *\/$/;"	m	struct:addrinfo
-ai_flags	lib/addrinfo.h	/^  int		ai_flags;			\/* AI_PASSIVE, AI_CANONNAME *\/$/;"	m	struct:addrinfo
-ai_next	lib/addrinfo.h	/^  struct addrinfo	*ai_next;	\/* next structure in linked list *\/$/;"	m	struct:addrinfo	typeref:struct:addrinfo::addrinfo
-ai_protocol	lib/addrinfo.h	/^  int		ai_protocol;		\/* IPPROTO_xxx for IPv4 and IPv6 *\/$/;"	m	struct:addrinfo
-ai_socktype	lib/addrinfo.h	/^  int		ai_socktype;		\/* SOCK_xxx *\/$/;"	m	struct:addrinfo
+arg1	lib/sum.h	/^	long arg1;$/;"	m	struct:args
+arg2	lib/sum.h	/^	long arg2;$/;"	m	struct:args
+args	lib/sum.h	/^struct args {$/;"	s
 bzero	lib/unp.h	130;"	d
-connect_alarm	lib/connect_timeo.c	/^connect_alarm(int signo)$/;"	f	file:
-connect_nonb	lib/connect_nonb.c	/^connect_nonb(int sockfd, const SA *saptr, socklen_t salen, int nsec)$/;"	f
-connect_timeo	lib/connect_timeo.c	/^connect_timeo(int sockfd, const SA *saptr, socklen_t salen, int nsec)$/;"	f
-daemon_inetd	lib/daemon_inetd.c	/^daemon_inetd(const char *pname, int facility)$/;"	f
-daemon_init	lib/daemon_init.c	/^daemon_init(const char *pname, int facility)$/;"	f
-daemon_proc	lib/error.c	/^int		daemon_proc;		\/* set nonzero by daemon_init() *\/$/;"	v
-dg_cli	lib/dg_cli.c	/^dg_cli(FILE *fp, int sockfd, const SA *pservaddr, socklen_t servlen)$/;"	f
-dg_echo	lib/dg_echo.c	/^dg_echo(int sockfd, SA *pcliaddr, socklen_t clilen)$/;"	f
-err_doit	lib/error.c	/^err_doit(int errnoflag, int level, const char *fmt, va_list ap)$/;"	f	file:
-err_dump	lib/error.c	/^err_dump(const char *fmt, ...)$/;"	f
-err_msg	lib/error.c	/^err_msg(const char *fmt, ...)$/;"	f
-err_quit	lib/error.c	/^err_quit(const char *fmt, ...)$/;"	f
-err_ret	lib/error.c	/^err_ret(const char *fmt, ...)$/;"	f
-err_sys	lib/error.c	/^err_sys(const char *fmt, ...)$/;"	f
-family_to_level	lib/family_to_level.c	/^family_to_level(int family)$/;"	f
-free_ifi_info	lib/get_ifi_info.c	/^free_ifi_info(struct ifi_info *ifihead)$/;"	f
-get_ifi_info	lib/get_ifi_info.c	/^get_ifi_info(int family, int doaliases)$/;"	f
+daemon_proc	client/error.c	/^int		daemon_proc;		\/* set nonzero by daemon_init() *\/$/;"	v
+daemon_proc	server/error.c	/^int		daemon_proc;		\/* set nonzero by daemon_init() *\/$/;"	v
+err_doit	client/error.c	/^err_doit(int errnoflag, int level, const char *fmt, va_list ap)$/;"	f	file:
+err_doit	server/error.c	/^err_doit(int errnoflag, int level, const char *fmt, va_list ap)$/;"	f	file:
+err_dump	client/error.c	/^err_dump(const char *fmt, ...)$/;"	f
+err_dump	server/error.c	/^err_dump(const char *fmt, ...)$/;"	f
+err_msg	client/error.c	/^err_msg(const char *fmt, ...)$/;"	f
+err_msg	server/error.c	/^err_msg(const char *fmt, ...)$/;"	f
+err_quit	client/error.c	/^err_quit(const char *fmt, ...)$/;"	f
+err_quit	server/error.c	/^err_quit(const char *fmt, ...)$/;"	f
+err_ret	client/error.c	/^err_ret(const char *fmt, ...)$/;"	f
+err_ret	server/error.c	/^err_ret(const char *fmt, ...)$/;"	f
+err_sys	client/error.c	/^err_sys(const char *fmt, ...)$/;"	f
+err_sys	server/error.c	/^err_sys(const char *fmt, ...)$/;"	f
 gethostbyname2	lib/unp.h	137;"	d
-gf_time	lib/gf_time.c	/^gf_time(void)$/;"	f
-host_serv	lib/host_serv.c	/^host_serv(const char *host, const char *serv, int family, int socktype)$/;"	f
-hstrerror	lib/hstrerror.c	/^hstrerror(int err)$/;"	f
-if_freenameindex	lib/if_nameindex.c	/^if_freenameindex(struct if_nameindex *ptr)$/;"	f
 if_index	lib/unp.h	/^  unsigned int   if_index;  \/* 1, 2, ... *\/$/;"	m	struct:if_nameindex
-if_indextoname	lib/if_indextoname.c	/^if_indextoname(unsigned int index, char *name)$/;"	f
 if_name	lib/unp.h	/^  char          *if_name;   \/* null-terminated name: "le0", ... *\/$/;"	m	struct:if_nameindex
-if_nameindex	lib/if_nameindex.c	/^if_nameindex(void)$/;"	f
 if_nameindex	lib/unp.h	/^struct if_nameindex {$/;"	s
-if_nametoindex	lib/if_nametoindex.c	/^if_nametoindex(const char *name)$/;"	f
-ifi_addr	lib/unpifi.h	/^  struct sockaddr  *ifi_addr;	\/* primary address *\/$/;"	m	struct:ifi_info	typeref:struct:ifi_info::sockaddr
-ifi_brdaddr	lib/unpifi.h	/^  struct sockaddr  *ifi_brdaddr;\/* broadcast address *\/$/;"	m	struct:ifi_info	typeref:struct:ifi_info::sockaddr
-ifi_dstaddr	lib/unpifi.h	/^  struct sockaddr  *ifi_dstaddr;\/* destination address *\/$/;"	m	struct:ifi_info	typeref:struct:ifi_info::sockaddr
-ifi_flags	lib/unpifi.h	/^  short   ifi_flags;			\/* IFF_xxx constants from <net\/if.h> *\/$/;"	m	struct:ifi_info
-ifi_haddr	lib/unpifi.h	/^  u_char  ifi_haddr[IFI_HADDR];	\/* hardware address *\/$/;"	m	struct:ifi_info
-ifi_hlen	lib/unpifi.h	/^  u_short ifi_hlen;				\/* # bytes in hardware address: 0, 6, 8 *\/$/;"	m	struct:ifi_info
-ifi_index	lib/unpifi.h	/^  short   ifi_index;			\/* interface index *\/$/;"	m	struct:ifi_info
-ifi_info	lib/unpifi.h	/^struct ifi_info {$/;"	s
-ifi_mtu	lib/unpifi.h	/^  short   ifi_mtu;				\/* interface MTU *\/$/;"	m	struct:ifi_info
-ifi_myflags	lib/unpifi.h	/^  short   ifi_myflags;			\/* our own IFI_xxx flags *\/$/;"	m	struct:ifi_info
-ifi_name	lib/unpifi.h	/^  char    ifi_name[IFI_NAME];	\/* interface name, null-terminated *\/$/;"	m	struct:ifi_info
-ifi_next	lib/unpifi.h	/^  struct ifi_info  *ifi_next;	\/* next of these structures *\/$/;"	m	struct:ifi_info	typeref:struct:ifi_info::ifi_info
-in6addr_any	lib/in6addr_any.c	/^const struct in6_addr in6addr_any;$/;"	v	typeref:struct:in6_addr
 ipi_addr	lib/unp.h	/^  struct in_addr	ipi_addr;	\/* dst IPv4 address *\/$/;"	m	struct:unp_in_pktinfo	typeref:struct:unp_in_pktinfo::in_addr
 ipi_ifindex	lib/unp.h	/^  int				ipi_ifindex;\/* received interface index *\/$/;"	m	struct:unp_in_pktinfo
-main	j-server.c	/^main(int argc, char **argv) {$/;"	f
+main	client/j-client.c	/^main(int argc, char **argv) {$/;"	f
+main	server/j-server.c	/^main(int argc, char **argv) {$/;"	f
 max	lib/unp.h	246;"	d
-mcast_block_source	lib/mcast_join.c	/^mcast_block_source(int sockfd, const SA *src, socklen_t srclen,$/;"	f
-mcast_get_if	lib/mcast_get_if.c	/^mcast_get_if(int sockfd)$/;"	f
-mcast_get_loop	lib/mcast_get_loop.c	/^mcast_get_loop(int sockfd)$/;"	f
-mcast_get_ttl	lib/mcast_get_ttl.c	/^mcast_get_ttl(int sockfd)$/;"	f
-mcast_join	lib/mcast_join.c	/^mcast_join(int sockfd, const SA *grp, socklen_t grplen,$/;"	f
-mcast_join_source_group	lib/mcast_join.c	/^mcast_join_source_group(int sockfd, const SA *src, socklen_t srclen,$/;"	f
-mcast_leave	lib/mcast_leave.c	/^mcast_leave(int sockfd, const SA *grp, socklen_t grplen)$/;"	f
-mcast_leave_source_group	lib/mcast_leave.c	/^mcast_leave_source_group(int sockfd, const SA *src, socklen_t srclen,$/;"	f
-mcast_set_if	lib/mcast_set_if.c	/^mcast_set_if(int sockfd, const char *ifname, u_int ifindex)$/;"	f
-mcast_set_loop	lib/mcast_set_loop.c	/^mcast_set_loop(int sockfd, int onoff)$/;"	f
-mcast_set_ttl	lib/mcast_set_ttl.c	/^mcast_set_ttl(int sockfd, int val)$/;"	f
-mcast_unblock_source	lib/mcast_join.c	/^mcast_unblock_source(int sockfd, const SA *src, socklen_t srclen,$/;"	f
 min	lib/unp.h	245;"	d
-my_addrs	lib/my_addrs.c	/^my_addrs(int *addrtype)$/;"	f
-my_read	lib/readline.c	/^my_read(int fd, char *ptr)$/;"	f	file:
-pselect	lib/pselect.c	/^pselect(int nfds, fd_set *rset, fd_set *wset, fd_set *xset,$/;"	f
-read_buf	lib/readline.c	/^static char	read_buf[MAXLINE];$/;"	v	file:
-read_cnt	lib/readline.c	/^static int	read_cnt;$/;"	v	file:
-read_fd	lib/read_fd.c	/^read_fd(int fd, void *ptr, size_t nbytes, int *recvfd)$/;"	f
-read_ptr	lib/readline.c	/^static char	*read_ptr;$/;"	v	file:
-readable_timeo	lib/readable_timeo.c	/^readable_timeo(int fd, int sec)$/;"	f
-readline	lib/readline.c	/^readline(int fd, void *vptr, size_t maxlen)$/;"	f
-readlinebuf	lib/readline.c	/^readlinebuf(void **vptrptr)$/;"	f
-readn	lib/readn.c	/^readn(int fd, void *vptr, size_t n)$/;"	f
+my_read	client/readline.c	/^my_read(int fd, char *ptr)$/;"	f	file:
+my_read	server/readline.c	/^my_read(int fd, char *ptr)$/;"	f	file:
+read_buf	client/readline.c	/^static char	read_buf[MAXLINE];$/;"	v	file:
+read_buf	server/readline.c	/^static char	read_buf[MAXLINE];$/;"	v	file:
+read_cnt	client/readline.c	/^static int	read_cnt;$/;"	v	file:
+read_cnt	server/readline.c	/^static int	read_cnt;$/;"	v	file:
+read_ptr	client/readline.c	/^static char	*read_ptr;$/;"	v	file:
+read_ptr	server/readline.c	/^static char	*read_ptr;$/;"	v	file:
+readline	client/readline.c	/^readline(int fd, void *vptr, size_t maxlen)$/;"	f
+readline	server/readline.c	/^readline(int fd, void *vptr, size_t maxlen)$/;"	f
+readlinebuf	client/readline.c	/^readlinebuf(void **vptrptr)$/;"	f
+readlinebuf	server/readline.c	/^readlinebuf(void **vptrptr)$/;"	f
 recv	lib/unp.h	90;"	d
 recv	lib/unp.h	92;"	d
-rtt_base	lib/unprtt.h	/^  uint32_t	rtt_base;	\/* # sec since 1\/1\/1970 at start *\/$/;"	m	struct:rtt_info
-rtt_d_flag	lib/rtt.c	/^int		rtt_d_flag = 0;		\/* debug flag; can be set by caller *\/$/;"	v
-rtt_debug	lib/rtt.c	/^rtt_debug(struct rtt_info *ptr)$/;"	f
-rtt_info	lib/unprtt.h	/^struct rtt_info {$/;"	s
-rtt_init	lib/rtt.c	/^rtt_init(struct rtt_info *ptr)$/;"	f
-rtt_minmax	lib/rtt.c	/^rtt_minmax(float rto)$/;"	f	file:
-rtt_newpack	lib/rtt.c	/^rtt_newpack(struct rtt_info *ptr)$/;"	f
-rtt_nrexmt	lib/unprtt.h	/^  int		rtt_nrexmt;	\/* # times retransmitted: 0, 1, 2, ... *\/$/;"	m	struct:rtt_info
-rtt_rto	lib/unprtt.h	/^  float		rtt_rto;	\/* current RTO to use, in seconds *\/$/;"	m	struct:rtt_info
-rtt_rtt	lib/unprtt.h	/^  float		rtt_rtt;	\/* most recent measured RTT, in seconds *\/$/;"	m	struct:rtt_info
-rtt_rttvar	lib/unprtt.h	/^  float		rtt_rttvar;	\/* smoothed mean deviation, in seconds *\/$/;"	m	struct:rtt_info
-rtt_srtt	lib/unprtt.h	/^  float		rtt_srtt;	\/* smoothed RTT estimator, in seconds *\/$/;"	m	struct:rtt_info
-rtt_start	lib/rtt.c	/^rtt_start(struct rtt_info *ptr)$/;"	f
-rtt_stop	lib/rtt.c	/^rtt_stop(struct rtt_info *ptr, uint32_t ms)$/;"	f
-rtt_timeout	lib/rtt.c	/^rtt_timeout(struct rtt_info *ptr)$/;"	f
-rtt_ts	lib/rtt.c	/^rtt_ts(struct rtt_info *ptr)$/;"	f
+result	lib/sum.h	/^	long result;$/;"	m	struct:result
+result	lib/sum.h	/^struct result {$/;"	s
 send	lib/unp.h	91;"	d
 send	lib/unp.h	93;"	d
-signal	lib/signal.c	/^signal(int signo, Sigfunc *func)$/;"	f
-signal_intr	lib/signal_intr.c	/^signal_intr(int signo, Sigfunc *func)$/;"	f
-snprintf	lib/snprintf.c	/^snprintf(char *buf, size_t size, const char *fmt, ...)$/;"	f
-sock_bind_wild	lib/sock_bind_wild.c	/^sock_bind_wild(int sockfd, int family)$/;"	f
-sock_cmp_addr	lib/sock_cmp_addr.c	/^sock_cmp_addr(const struct sockaddr *sa1, const struct sockaddr *sa2,$/;"	f
-sock_cmp_port	lib/sock_cmp_port.c	/^sock_cmp_port(const struct sockaddr *sa1, const struct sockaddr *sa2,$/;"	f
-sock_get_port	lib/sock_get_port.c	/^sock_get_port(const struct sockaddr *sa, socklen_t salen)$/;"	f
-sock_ntop	lib/sock_ntop.c	/^sock_ntop(const struct sockaddr *sa, socklen_t salen)$/;"	f
-sock_ntop_host	lib/sock_ntop_host.c	/^sock_ntop_host(const struct sockaddr *sa, socklen_t salen)$/;"	f
-sock_set_addr	lib/sock_set_addr.c	/^sock_set_addr(struct sockaddr *sa, socklen_t salen, const void *addr)$/;"	f
-sock_set_port	lib/sock_set_port.c	/^sock_set_port(struct sockaddr *sa, socklen_t salen, int port)$/;"	f
-sock_set_wild	lib/sock_set_wild.c	/^sock_set_wild(struct sockaddr *sa, socklen_t salen)$/;"	f
-sockatmark	lib/sockatmark.c	/^sockatmark(int fd)$/;"	f
-sockfd_to_family	lib/sockfd_to_family.c	/^sockfd_to_family(int sockfd)$/;"	f
-str_cli	lib/str_cli.c	/^str_cli(FILE *fp, int sockfd)$/;"	f
-str_echo	str_echo.c	/^str_echo(int sockfd)$/;"	f
-tcp_connect	lib/tcp_connect.c	/^tcp_connect(const char *host, const char *serv)$/;"	f
-tcp_listen	lib/tcp_listen.c	/^tcp_listen(const char *host, const char *serv, socklen_t *addrlenp)$/;"	f
-tv_sub	lib/tv_sub.c	/^tv_sub(struct timeval *out, struct timeval *in)$/;"	f
-udp_client	lib/udp_client.c	/^udp_client(const char *host, const char *serv, SA **saptr, socklen_t *lenp)$/;"	f
-udp_connect	lib/udp_connect.c	/^udp_connect(const char *host, const char *serv)$/;"	f
-udp_server	lib/udp_server.c	/^udp_server(const char *host, const char *serv, socklen_t *addrlenp)$/;"	f
+sig_child	server/j-server.c	/^sig_child(int signo) {$/;"	f
+str_cli	client/str_cli.c	/^str_cli(FILE *fp, int sockfd)$/;"	f
+str_echo	server/str_echo.c	/^void str_echo(int sockfd)$/;"	f
 unp_in_pktinfo	lib/unp.h	/^struct unp_in_pktinfo {$/;"	s
-writable_timeo	lib/writable_timeo.c	/^writable_timeo(int fd, int sec)$/;"	f
-write_fd	lib/write_fd.c	/^write_fd(int fd, void *ptr, size_t nbytes, int sendfd)$/;"	f
-writen	lib/writen.c	/^writen(int fd, const void *vptr, size_t n)$/;"	f

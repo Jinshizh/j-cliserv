@@ -6,7 +6,7 @@ $(EXEC): $(OBJS)
 	$(CC) -g -o $(EXEC) $(OBJS)
 j-client.o:j-client.c ../lib/unp.h
 	$(CC) -g -c $<
-str_cli.o:str_cli.c ../lib/unp.h
+str_cli.o:str_cli.c ../lib/unp.h ../lib/sum.h
 	$(CC) -g -c $<
 error.o:error.c ../lib/unp.h
 	$(CC) -g -c $<
