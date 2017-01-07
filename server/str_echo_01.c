@@ -3,9 +3,7 @@
 void str_echo(int sockfd)
 {
 	ssize_t		n;
-	char		buf[MAXLINE];
-
-/*二进制传输 a+b
+//	char		buf[MAXLINE];
 	struct args args;
 	struct result result;
 
@@ -18,15 +16,14 @@ void str_echo(int sockfd)
 		result.sum = args.arg1 + args.arg2;
 //		printf("%ld",result.sum);
 		write(sockfd, &result, sizeof(result));
-	}*/
-
-
+	}
+/*
 again:
-	while ( (n = readline(sockfd, buf, MAXLINE)) > 0)
+	while ( (n = readline(sockfd, &args, MAXLINE)) > 0)
 		write(sockfd, buf, n);
 	if (n < 0 && errno == EINTR)
 		goto again;
 	else if (n < 0)
 		err_sys("str_echo: read error");
-
+*/
 }
