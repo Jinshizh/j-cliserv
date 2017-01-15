@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	makefile	/^CC = gcc$/;"	m
+EXEC	makefile	/^EXEC = j-server-udp$/;"	m
+OBJS	makefile	/^OBJS = j-server-udp.o str_echo_udp.o error.o$/;"	m
+Readline	readline.c	/^Readline(int fd, void *ptr, size_t maxlen)$/;"	f
+daemon_proc	error.c	/^int		daemon_proc;		\/* set nonzero by daemon_init() *\/$/;"	v
+err_doit	error.c	/^err_doit(int errnoflag, int level, const char *fmt, va_list ap)$/;"	f	file:
+err_dump	error.c	/^err_dump(const char *fmt, ...)$/;"	f
+err_msg	error.c	/^err_msg(const char *fmt, ...)$/;"	f
+err_quit	error.c	/^err_quit(const char *fmt, ...)$/;"	f
+err_ret	error.c	/^err_ret(const char *fmt, ...)$/;"	f
+err_sys	error.c	/^err_sys(const char *fmt, ...)$/;"	f
+main	j-server-udp.c	/^main(int argc, char **argv) {$/;"	f
+main	j-server.c	/^main(int argc, char **argv) {$/;"	f
+my_read	readline.c	/^my_read(int fd, char *ptr)$/;"	f	file:
+read_buf	readline.c	/^static char	read_buf[MAXLINE];$/;"	v	file:
+read_cnt	readline.c	/^static int	read_cnt;$/;"	v	file:
+read_ptr	readline.c	/^static char	*read_ptr;$/;"	v	file:
+readline	readline.c	/^readline(int fd, void *vptr, size_t maxlen)$/;"	f
+readlinebuf	readline.c	/^readlinebuf(void **vptrptr)$/;"	f
+sig_child	j-server.c	/^sig_child(int signo) {$/;"	f
+str_echo	str_echo.c	/^void str_echo(int sockfd)$/;"	f
+str_echo	str_echo_01.c	/^void str_echo(int sockfd)$/;"	f
+str_echo_udp	str_echo_udp.c	/^void str_echo_udp(int sockfd, SA *cliaddr, socklen_t clilen)$/;"	f

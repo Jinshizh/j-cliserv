@@ -7,12 +7,18 @@
 AF_LOCAL	lib/unp.h	173;"	d
 BUFFSIZE	lib/unp.h	197;"	d
 CC	client/makefile	/^CC = gcc$/;"	m
+CC	client_udp/makefile	/^CC = gcc$/;"	m
 CC	server/makefile	/^CC = gcc$/;"	m
+CC	server_single_process/makefile	/^CC = gcc$/;"	m
+CC	server_udp/makefile	/^CC = gcc$/;"	m
 CMSG_LEN	lib/unp.h	154;"	d
 CMSG_SPACE	lib/unp.h	158;"	d
 DIR_MODE	lib/unp.h	240;"	d
 EXEC	client/makefile	/^EXEC = j-client$/;"	m
+EXEC	client_udp/makefile	/^EXEC = j-client$/;"	m
 EXEC	server/makefile	/^EXEC = j-server$/;"	m
+EXEC	server_single_process/makefile	/^EXEC = j-server$/;"	m
+EXEC	server_udp/makefile	/^EXEC = j-server$/;"	m
 FILE_MODE	lib/unp.h	238;"	d
 INADDR_NONE	lib/unp.h	98;"	d
 INET6_ADDRSTRLEN	lib/unp.h	121;"	d
@@ -22,10 +28,16 @@ INFTIM_UNPH	lib/unp.h	187;"	d
 LISTENQ	lib/unp.h	193;"	d
 MAXLINE	lib/unp.h	196;"	d
 OBJS	client/makefile	/^OBJS = j-client.o str_cli.o error.o readline.o$/;"	m
+OBJS	client_udp/makefile	/^OBJS = j-client.o str_cli.o error.o readline.o$/;"	m
 OBJS	server/makefile	/^OBJS = j-server.o str_echo.o error.o readline.o$/;"	m
+OBJS	server_single_process/makefile	/^OBJS = j-server.o str_echo.o error.o readline.o$/;"	m
+OBJS	server_udp/makefile	/^OBJS = j-server.o str_echo.o error.o readline.o$/;"	m
 PF_LOCAL	lib/unp.h	176;"	d
 Readline	client/readline.c	/^Readline(int fd, void *ptr, size_t maxlen)$/;"	f
+Readline	client_udp/readline.c	/^Readline(int fd, void *ptr, size_t maxlen)$/;"	f
 Readline	server/readline.c	/^Readline(int fd, void *ptr, size_t maxlen)$/;"	f
+Readline	server_single_process/readline.c	/^Readline(int fd, void *ptr, size_t maxlen)$/;"	f
+Readline	server_udp/readline.c	/^Readline(int fd, void *ptr, size_t maxlen)$/;"	f
 SA	lib/unp.h	212;"	d
 SERV_PORT	lib/unp.h	200;"	d
 SERV_PORT_STR	lib/unp.h	201;"	d
@@ -47,19 +59,40 @@ arg2	lib/sum.h	/^	long arg2;$/;"	m	struct:args
 args	lib/sum.h	/^struct args {$/;"	s
 bzero	lib/unp.h	130;"	d
 daemon_proc	client/error.c	/^int		daemon_proc;		\/* set nonzero by daemon_init() *\/$/;"	v
+daemon_proc	client_udp/error.c	/^int		daemon_proc;		\/* set nonzero by daemon_init() *\/$/;"	v
 daemon_proc	server/error.c	/^int		daemon_proc;		\/* set nonzero by daemon_init() *\/$/;"	v
+daemon_proc	server_single_process/error.c	/^int		daemon_proc;		\/* set nonzero by daemon_init() *\/$/;"	v
+daemon_proc	server_udp/error.c	/^int		daemon_proc;		\/* set nonzero by daemon_init() *\/$/;"	v
 err_doit	client/error.c	/^err_doit(int errnoflag, int level, const char *fmt, va_list ap)$/;"	f	file:
+err_doit	client_udp/error.c	/^err_doit(int errnoflag, int level, const char *fmt, va_list ap)$/;"	f	file:
 err_doit	server/error.c	/^err_doit(int errnoflag, int level, const char *fmt, va_list ap)$/;"	f	file:
+err_doit	server_single_process/error.c	/^err_doit(int errnoflag, int level, const char *fmt, va_list ap)$/;"	f	file:
+err_doit	server_udp/error.c	/^err_doit(int errnoflag, int level, const char *fmt, va_list ap)$/;"	f	file:
 err_dump	client/error.c	/^err_dump(const char *fmt, ...)$/;"	f
+err_dump	client_udp/error.c	/^err_dump(const char *fmt, ...)$/;"	f
 err_dump	server/error.c	/^err_dump(const char *fmt, ...)$/;"	f
+err_dump	server_single_process/error.c	/^err_dump(const char *fmt, ...)$/;"	f
+err_dump	server_udp/error.c	/^err_dump(const char *fmt, ...)$/;"	f
 err_msg	client/error.c	/^err_msg(const char *fmt, ...)$/;"	f
+err_msg	client_udp/error.c	/^err_msg(const char *fmt, ...)$/;"	f
 err_msg	server/error.c	/^err_msg(const char *fmt, ...)$/;"	f
+err_msg	server_single_process/error.c	/^err_msg(const char *fmt, ...)$/;"	f
+err_msg	server_udp/error.c	/^err_msg(const char *fmt, ...)$/;"	f
 err_quit	client/error.c	/^err_quit(const char *fmt, ...)$/;"	f
+err_quit	client_udp/error.c	/^err_quit(const char *fmt, ...)$/;"	f
 err_quit	server/error.c	/^err_quit(const char *fmt, ...)$/;"	f
+err_quit	server_single_process/error.c	/^err_quit(const char *fmt, ...)$/;"	f
+err_quit	server_udp/error.c	/^err_quit(const char *fmt, ...)$/;"	f
 err_ret	client/error.c	/^err_ret(const char *fmt, ...)$/;"	f
+err_ret	client_udp/error.c	/^err_ret(const char *fmt, ...)$/;"	f
 err_ret	server/error.c	/^err_ret(const char *fmt, ...)$/;"	f
+err_ret	server_single_process/error.c	/^err_ret(const char *fmt, ...)$/;"	f
+err_ret	server_udp/error.c	/^err_ret(const char *fmt, ...)$/;"	f
 err_sys	client/error.c	/^err_sys(const char *fmt, ...)$/;"	f
+err_sys	client_udp/error.c	/^err_sys(const char *fmt, ...)$/;"	f
 err_sys	server/error.c	/^err_sys(const char *fmt, ...)$/;"	f
+err_sys	server_single_process/error.c	/^err_sys(const char *fmt, ...)$/;"	f
+err_sys	server_udp/error.c	/^err_sys(const char *fmt, ...)$/;"	f
 gethostbyname2	lib/unp.h	137;"	d
 if_index	lib/unp.h	/^  unsigned int   if_index;  \/* 1, 2, ... *\/$/;"	m	struct:if_nameindex
 if_name	lib/unp.h	/^  char          *if_name;   \/* null-terminated name: "le0", ... *\/$/;"	m	struct:if_nameindex
@@ -67,28 +100,60 @@ if_nameindex	lib/unp.h	/^struct if_nameindex {$/;"	s
 ipi_addr	lib/unp.h	/^  struct in_addr	ipi_addr;	\/* dst IPv4 address *\/$/;"	m	struct:unp_in_pktinfo	typeref:struct:unp_in_pktinfo::in_addr
 ipi_ifindex	lib/unp.h	/^  int				ipi_ifindex;\/* received interface index *\/$/;"	m	struct:unp_in_pktinfo
 main	client/j-client.c	/^main(int argc, char **argv) {$/;"	f
+main	client_udp/j-client.c	/^main(int argc, char **argv) {$/;"	f
 main	server/j-server.c	/^main(int argc, char **argv) {$/;"	f
+main	server_single_process/j-server.c	/^main(int argc, char **argv) {$/;"	f
+main	server_udp/j-server-udp.c	/^main(int argc, char **argv) {$/;"	f
+main	server_udp/j-server.c	/^main(int argc, char **argv) {$/;"	f
 max	lib/unp.h	246;"	d
 min	lib/unp.h	245;"	d
 my_read	client/readline.c	/^my_read(int fd, char *ptr)$/;"	f	file:
+my_read	client_udp/readline.c	/^my_read(int fd, char *ptr)$/;"	f	file:
 my_read	server/readline.c	/^my_read(int fd, char *ptr)$/;"	f	file:
+my_read	server_single_process/readline.c	/^my_read(int fd, char *ptr)$/;"	f	file:
+my_read	server_udp/readline.c	/^my_read(int fd, char *ptr)$/;"	f	file:
 read_buf	client/readline.c	/^static char	read_buf[MAXLINE];$/;"	v	file:
+read_buf	client_udp/readline.c	/^static char	read_buf[MAXLINE];$/;"	v	file:
 read_buf	server/readline.c	/^static char	read_buf[MAXLINE];$/;"	v	file:
+read_buf	server_single_process/readline.c	/^static char	read_buf[MAXLINE];$/;"	v	file:
+read_buf	server_udp/readline.c	/^static char	read_buf[MAXLINE];$/;"	v	file:
 read_cnt	client/readline.c	/^static int	read_cnt;$/;"	v	file:
+read_cnt	client_udp/readline.c	/^static int	read_cnt;$/;"	v	file:
 read_cnt	server/readline.c	/^static int	read_cnt;$/;"	v	file:
+read_cnt	server_single_process/readline.c	/^static int	read_cnt;$/;"	v	file:
+read_cnt	server_udp/readline.c	/^static int	read_cnt;$/;"	v	file:
 read_ptr	client/readline.c	/^static char	*read_ptr;$/;"	v	file:
+read_ptr	client_udp/readline.c	/^static char	*read_ptr;$/;"	v	file:
 read_ptr	server/readline.c	/^static char	*read_ptr;$/;"	v	file:
+read_ptr	server_single_process/readline.c	/^static char	*read_ptr;$/;"	v	file:
+read_ptr	server_udp/readline.c	/^static char	*read_ptr;$/;"	v	file:
 readline	client/readline.c	/^readline(int fd, void *vptr, size_t maxlen)$/;"	f
+readline	client_udp/readline.c	/^readline(int fd, void *vptr, size_t maxlen)$/;"	f
 readline	server/readline.c	/^readline(int fd, void *vptr, size_t maxlen)$/;"	f
+readline	server_single_process/readline.c	/^readline(int fd, void *vptr, size_t maxlen)$/;"	f
+readline	server_udp/readline.c	/^readline(int fd, void *vptr, size_t maxlen)$/;"	f
 readlinebuf	client/readline.c	/^readlinebuf(void **vptrptr)$/;"	f
+readlinebuf	client_udp/readline.c	/^readlinebuf(void **vptrptr)$/;"	f
 readlinebuf	server/readline.c	/^readlinebuf(void **vptrptr)$/;"	f
+readlinebuf	server_single_process/readline.c	/^readlinebuf(void **vptrptr)$/;"	f
+readlinebuf	server_udp/readline.c	/^readlinebuf(void **vptrptr)$/;"	f
 recv	lib/unp.h	90;"	d
 recv	lib/unp.h	92;"	d
-result	lib/sum.h	/^	long result;$/;"	m	struct:result
 result	lib/sum.h	/^struct result {$/;"	s
 send	lib/unp.h	91;"	d
 send	lib/unp.h	93;"	d
 sig_child	server/j-server.c	/^sig_child(int signo) {$/;"	f
+sig_child	server_single_process/j-server.c	/^sig_child(int signo) {$/;"	f
+sig_child	server_udp/j-server.c	/^sig_child(int signo) {$/;"	f
 str_cli	client/str_cli.c	/^str_cli(FILE *fp, int sockfd)$/;"	f
+str_cli	client/str_cli_01.c	/^str_cli(FILE *fp, int sockfd)$/;"	f
+str_cli	client_udp/str_cli.c	/^str_cli(FILE *fp, int sockfd)$/;"	f
+str_cli	client_udp/str_cli_01.c	/^str_cli(FILE *fp, int sockfd)$/;"	f
 str_echo	server/str_echo.c	/^void str_echo(int sockfd)$/;"	f
+str_echo	server/str_echo_01.c	/^void str_echo(int sockfd)$/;"	f
+str_echo	server_single_process/str_echo.c	/^void str_echo(int sockfd)$/;"	f
+str_echo	server_single_process/str_echo_01.c	/^void str_echo(int sockfd)$/;"	f
+str_echo	server_udp/str_echo.c	/^void str_echo(int sockfd)$/;"	f
+str_echo	server_udp/str_echo_01.c	/^void str_echo(int sockfd)$/;"	f
+sum	lib/sum.h	/^	long sum;$/;"	m	struct:result
 unp_in_pktinfo	lib/unp.h	/^struct unp_in_pktinfo {$/;"	s

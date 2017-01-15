@@ -15,7 +15,7 @@ main(int argc, char **argv) {
 	int listenfd, connfd;
 	pid_t childpid;
 	socklen_t clilen;
-	struct sockaddr_in cliaddr, servaddr; //IPv4的套接字地址结构，IPv6的是sockaddr_in6
+	struct sockaddr_in cliaddr, servaddr;
 	if((listenfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) //创建套接字，指定协议类型
 		err_sys("socket error");
 	
@@ -24,7 +24,7 @@ main(int argc, char **argv) {
 	servaddr.sin_addr.s_addr = htonl(INADDR_ANY);//将主机字节序转化为网络字节序（大端），l代表long 
 	servaddr.sin_port = htons(SERV_PORT);
 
-	if(bind(listenfd, (SA *) &servaddr, sizeof(servaddr)) < 0)//把协议地址/端口号等与套接字绑定
+	if(bind(listenfd, &servaddr, sizeof(servaddr)) < 0)//把协议地址/端口号等与套接字绑定
 		err_sys("bind error");
 
 	if(listen(listenfd, LISTENQ))//把默认为主动连接的套接字转为被动连接，并设置两个排队队列的大小
@@ -34,7 +34,7 @@ main(int argc, char **argv) {
 	for(;;) {
 		clilen = sizeof(cliaddr);
         //阻塞等待从已连接队列头返回下一个已连>接套接字
-		if((connfd = accept(listenfd, (SA *) &cliaddr, &clilen)) < 0) {
+		if((connfd = accept(listenfd, &cliaddr, &clilen)) < 0) {
 			if(errno == EINTR)
 				continue;
 	    	else

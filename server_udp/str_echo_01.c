@@ -8,7 +8,7 @@ void str_echo(int sockfd)
 	struct result result;
 
 	for(;;) {
-		if((n = read(sockfd, &args, sizeof(args))) == 0) {//直接从缓冲区读
+		if((n = read(sockfd, &args, sizeof(args))) == 0) {
 //			printf("%d", n);
 			return;
 		}
